@@ -92,7 +92,7 @@ const SmoothScrollWebsite = () => {
 
             <section id="about" className="screen">
         <div className="screen-content">
-          <h1 className="title text-center">about me</h1>
+          <h1 className="title text-center">About me</h1>
           <div className="about-grid">
             <div className="neumorphic-card technical-skills-card">
               <h2 className="content-title">Technical Skills</h2>
@@ -154,7 +154,7 @@ const SmoothScrollWebsite = () => {
       </section>
 
       <section id="projects" className="screen projects-section-container">
-        <h1 className="title projects-title">projects</h1>
+        <h1 className="title projects-title">Projects</h1>
         <div className="screen-content projects-content-wrapper">
           <div className="project-grid">
             <div className="project-card">
@@ -195,7 +195,7 @@ const SmoothScrollWebsite = () => {
 
       <section id="contact" className="screen">
         <div className="screen-content">
-          <h1 className="title text-center">contact me</h1>
+          <h1 className="title text-center">Contact me</h1>
           <p className="subtitle text-center">
             Ready to bring your ideas to life? Drop me a line and let's create something amazing together.
           </p>
@@ -228,13 +228,13 @@ const SmoothScrollWebsite = () => {
                 </div>
 
                 {/* Location */}
-                <div className="contact-info-item non-clickable">
+                {/* <div className="contact-info-item non-clickable">
                   <div className="contact-icon-wrapper"><MapPin size={20} /></div>
                   <div className="contact-text-wrapper">
                     <p className="contact-label">Location</p>
                     <p className="contact-value">Nagpur, Maharashtra, IN</p>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               {/* Social Links */}
