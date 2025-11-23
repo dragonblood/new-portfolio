@@ -181,14 +181,14 @@ const SmoothScrollWebsite = () => {
                 <a href="http://boomerang.vipulpetkar.me/" target="_blank" rel="noopener noreferrer">View Project</a>
               </div>
             </div>
-            <div className="project-card">
+            {/* <div className="project-card">
               <img src={three} alt="Project Screenshot" className="project-screenshot" />
               <div className="project-content">
                 <h2 className="project-title">Neumorphic Image Tagging</h2>
                 <p>A web app designed with neuromorphic principles to analyze user-uploaded images stored in Azure Blob Storage.</p>
                 <a href="https://cataract.azurewebsites.net" target="_blank" rel="noopener noreferrer">View Project</a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
