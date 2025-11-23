@@ -44,13 +44,70 @@ const SmoothScrollWebsite = () => {
         </div>
       </section>
 
-      <section id="about" className="screen">
+      {/* EXPERIENCE SECTION */}
+      <section id="experience" className="screen">
+        <div className="screen-content">
+          <h1 className="title text-center">Experience</h1>
+
+          {/* Entry 1: Current (KONE) */}
+          <div className="neumorphic-card">
+              <h2 className="content-title">Lead Cloud Architect</h2>
+              <p style={{ fontWeight: 600 }}>Seligent Consulting (Client: KONE R&D) | 2024 - Present</p>
+            
+            <ul className="job-list">
+              <li><strong>Legacy Migration:</strong> Leading the migration of a legacy Windows Service drawing generation system (FLCAD) to a modern, event-driven serverless architecture on AWS.</li>
+              <li><strong>Architecture Design:</strong> Architected a modular, reusable validation framework using AWS Lambda, Step Functions, and S3. This design allowed subsequent integrations to reuse 90% of core components, significantly accelerating development velocity.</li>
+              <li><strong>DevOps Standardization:</strong> Standardized environment replication for Dev/QA/Prod using AWS CloudFormation (IaC) and GitHub Actions, ensuring consistent deployments across all stages.</li>
+              <li><strong>Security & Optimization:</strong> Secured network infrastructure by designing isolated VPCs with strict Security Group protocols. Optimized cloud expenditure by replacing always-on compute with on-demand serverless components, drastically reducing monthly burn rates.</li>
+            </ul>
+          </div>
+<br /><br />
+          {/* Entry 2: Previous (Alstom/Delaval) */}
+          <div className="neumorphic-card">
+              <h2 className="content-title">PLM Developer & Consultant</h2>
+              <p style={{ fontWeight: 600 }}>Seligent Consulting (Clients: Alstom, Delaval) | Nov 2021 - 2024</p>
+            <ul className="job-list">
+              <li><strong>Aras Migration:</strong> Managed migration from Aras v22 to v27 for Delaval and assisted with complex Aras-SAP integrations for Alstom.</li>
+              <li><strong>Secure API Development:</strong> Developed "Hydra," a highly customized configuration for Alstom. Built a secure API wrapper using ASP.NET to extend functionality and allow secure, flexible user access.</li>
+              <li><strong>Integration & Orchestration:</strong> Implemented Aras-Orchestra integrations utilizing secure SFTP file transfers.</li>
+              <li><strong>Compliance Systems:</strong> Developed a Proof of Concept (POC) to handle European environmental compliance via ECHA APIs. Automated the registration of dossiers in the SCIP database and visualized compliance status directly within Aras.</li>
+              <li><strong>Client Interface:</strong> Built a complete ReactJS interface for US-based clients, handling all requirement gathering and direct communication.</li>
+            </ul>
+          </div>
+
+          {/* Entry 3: Intern
+          <div className="neumorphic-card full-width">
+            <div className="job-header">
+              <h2 className="content-title-small">Summer Intern</h2>
+              <p className="job-sub">Cojag Smart Technology | Jun 2019 - Jul 2019</p>
+            </div>
+            <ul className="job-list simple-list">
+              <li>Collaborated with the analytics team to visualize data and assisted in planning tech infrastructure for local government schools.</li>
+            </ul>
+          </div> */}
+
+        </div>
+      </section>
+
+
+            <section id="about" className="screen">
         <div className="screen-content">
           <h1 className="title text-center">about me</h1>
           <div className="about-grid">
             <div className="neumorphic-card technical-skills-card">
               <h2 className="content-title">Technical Skills</h2>
               <div className="skills-grid">
+                <div className="skill-category">
+                  <h3>DevOps & Cloud</h3>
+                  <ul>
+                    <li>AWS</li>
+                    <li>Linux</li>
+                    <li>Cloud migration</li>
+                    <li>Cloud formation and CDK script</li>
+                    <li>GIT/Github</li>
+                    <li>Google Cloud Platform</li>
+                  </ul>
+                </div>
                 <div className="skill-category">
                   <h3>Frontend</h3>
                   <ul>
@@ -76,17 +133,6 @@ const SmoothScrollWebsite = () => {
                   </ul>
                 </div>
                 <div className="skill-category">
-                  <h3>DevOps & Cloud</h3>
-                  <ul>
-                    <li>AWS</li>
-                    <li>Linux</li>
-                    <li>Cloud migration</li>
-                    <li>Cloud formation and CDK script</li>
-                    <li>GIT/Github</li>
-                    <li>Google Cloud Platform</li>
-                  </ul>
-                </div>
-                <div className="skill-category">
                   <h3>PLM</h3>
                   <ul>
                     <li>Aras PLM 12, 14, 22</li>
@@ -98,62 +144,10 @@ const SmoothScrollWebsite = () => {
               </div>
             </div>
             <div className="neumorphic-card">
-              <h2 className="content-title">Education</h2>
+              <h2 className="content-title">Certification & Education</h2>
               <p><strong>Bachelor's Degree in Computer Technology</strong></p>
               <p>K.D.K College of Engineering (2017 - 2021)</p>
               <p>Final Year CGPA: 9.39</p>
-              <hr className="separator" />
-              <p><strong>12th Grade, Maharashtra State Board</strong></p>
-              <p>Jeeven Vikas Junior college (2015 - 2017)</p>
-              <p>Passed out with 70%</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="experience" className="screen">
-        <div className="screen-content">
-          <h1 className="title text-center">experience</h1>
-          <div className="neumorphic-card full-width">
-            <h2 className="content-title">Full Stack Developer</h2>
-            <p style={{ fontWeight: 600 }}>Seligent Consulting | Nov 2021-Now | Pune, India</p>
-            <ul style={{ listStyle: 'disc', listStylePosition: 'inside', marginTop: '0.5rem' }}>
-              <li>Currently helping Delaval with the migration from ARAS (ASP.NET based application)
-                v22 to v27 and assisting with ARAS-SAP Integration for Alstom.</li>
-
-              <li>Developed, tested, and helped deploy (through CI/CD pipeline) hydra highly customized
-                and configured ARAS innovator by Alstom.
-                <ul>
-                  <li>Worked on ARAS-Orchestra integration where files were transferred via. SFTP.</li>
-
-                  <li>Built Secure API Wrapper Around Hydra using APS.NET, to extend the functionality by allowing the API users more flexibility in a secure way.</li>
-                </ul>
-              </li>
-
-              <li>Built a POC in Aras innovator to handle European environment compliance through
-                European Chemicals Agency (ECHA) APIs for substances of concern in parts. Which
-                involved Auto registration of the dossiers at ECHA in the SCIP (Substances of Concern In
-                Products) database and showing their status in Aras.</li>
-
-              <li>Built an entire interface in ReactJS for American clients while directly handling communication and requirements.</li>
-            </ul>
-          </div>
-          <div className="content-grid">
-            <div className="neumorphic-card">
-              <h2 className="content-title">Summer School on Machine Learning</h2>
-              <p style={{ fontWeight: 600 }}>IIIT Hyderabad | July 2019 | Hyderabad, India</p>
-              <ul style={{ listStyle: 'disc', listStylePosition: 'inside', marginTop: '0.5rem' }}>
-                <li>Learned about the various state-of-the-art machine learning and deep learning techniques.</li>
-                <li>Built and trained various CNNS, GANS, Autoencoders, etc under the supervision of industry-leading experts.</li>
-              </ul>
-            </div>
-            <div className="neumorphic-card">
-              <h2 className="content-title">Summer Intern</h2>
-              <p style={{ fontWeight: 600 }}>Cojag Smart Technology | Jun 2019-Jul 2019 | Nagpur, India</p>
-              <ul style={{ listStyle: 'disc', listStylePosition: 'inside', marginTop: '0.5rem' }}>
-                <li>Worked with the analytics team to visualize and analyze data from various sources.</li>
-                <li>Helped with the planning of tech infrastructure for local government schools.</li>
-              </ul>
             </div>
           </div>
         </div>
